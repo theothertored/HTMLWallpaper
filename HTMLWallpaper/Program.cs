@@ -32,6 +32,8 @@ namespace HTMLWallpaper
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new HTMLWallpaperApplicationContext());
+
+            if (_mutexApplication != null) _mutexApplication.Dispose();
         }
     }
 }

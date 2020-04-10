@@ -89,13 +89,6 @@ namespace HTMLWallpaper
                 return;
             }
 
-            if (!_cbxReloadLocalOnChange.Checked)
-            {
-                _tvFilesToWatch.Enabled = false;
-                _btnRefreshFiles.Enabled = false;
-                return;
-            }
-
             var localPath = Utils.GetPathFromLocalUrl(url);
             if (!File.Exists(localPath)) { DisableLocalProjectUI(); return; }
 
@@ -107,8 +100,9 @@ namespace HTMLWallpaper
             ExpandToShowChecked();
 
             _gbLocalProjectOptions.Enabled = true;
-            _tvFilesToWatch.Enabled = true;
-            _btnRefreshFiles.Enabled = true;
+
+            _tvFilesToWatch.Enabled = _cbxReloadLocalOnChange.Checked;
+            _btnRefreshFiles.Enabled = _cbxReloadLocalOnChange.Checked;
         }
 
         private void DisableLocalProjectUI()

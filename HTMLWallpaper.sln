@@ -3,30 +3,74 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTMLWallpaper", "HTMLWallpaper.csproj", "{B48C1A22-C214-4243-BC74-34211F895B76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTMLWallpaper", "HTMLWallpaper\HTMLWallpaper.csproj", "{B48C1A22-C214-4243-BC74-34211F895B76}"
+EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "HTMLWallpaperSetup", "HTMLWallpaperSetup\HTMLWallpaperSetup.aiproj", "{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
+		All|x64 = All|x64
+		All|x86 = All|x86
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		DefaultBuild|Any CPU = DefaultBuild|Any CPU
+		DefaultBuild|x64 = DefaultBuild|x64
+		DefaultBuild|x86 = DefaultBuild|x86
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B48C1A22-C214-4243-BC74-34211F895B76}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{B48C1A22-C214-4243-BC74-34211F895B76}.All|Any CPU.Build.0 = Release|Any CPU
+		{B48C1A22-C214-4243-BC74-34211F895B76}.All|x64.ActiveCfg = Release|x64
+		{B48C1A22-C214-4243-BC74-34211F895B76}.All|x64.Build.0 = Release|x64
+		{B48C1A22-C214-4243-BC74-34211F895B76}.All|x86.ActiveCfg = Release|x86
+		{B48C1A22-C214-4243-BC74-34211F895B76}.All|x86.Build.0 = Release|x86
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Debug|x64.ActiveCfg = Debug|x64
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Debug|x64.Build.0 = Debug|x64
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Debug|x86.ActiveCfg = Debug|x86
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Debug|x86.Build.0 = Debug|x86
+		{B48C1A22-C214-4243-BC74-34211F895B76}.DefaultBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{B48C1A22-C214-4243-BC74-34211F895B76}.DefaultBuild|Any CPU.Build.0 = Debug|Any CPU
+		{B48C1A22-C214-4243-BC74-34211F895B76}.DefaultBuild|x64.ActiveCfg = Debug|x64
+		{B48C1A22-C214-4243-BC74-34211F895B76}.DefaultBuild|x64.Build.0 = Debug|x64
+		{B48C1A22-C214-4243-BC74-34211F895B76}.DefaultBuild|x86.ActiveCfg = Debug|x86
+		{B48C1A22-C214-4243-BC74-34211F895B76}.DefaultBuild|x86.Build.0 = Debug|x86
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Release|x64.ActiveCfg = Release|x64
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Release|x64.Build.0 = Release|x64
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Release|x86.ActiveCfg = Release|x86
 		{B48C1A22-C214-4243-BC74-34211F895B76}.Release|x86.Build.0 = Release|x86
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.All|Any CPU.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.All|Any CPU.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.All|x64.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.All|x64.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.All|x86.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.All|x86.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Debug|Any CPU.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Debug|Any CPU.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Debug|x64.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Debug|x64.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Debug|x86.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Debug|x86.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.DefaultBuild|Any CPU.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.DefaultBuild|Any CPU.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.DefaultBuild|x64.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.DefaultBuild|x64.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.DefaultBuild|x86.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.DefaultBuild|x86.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Release|Any CPU.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Release|Any CPU.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Release|x64.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Release|x64.Build.0 = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Release|x86.ActiveCfg = DefaultBuild
+		{770D1DF9-EB36-4A19-86B5-571B7FE95BBC}.Release|x86.Build.0 = DefaultBuild
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

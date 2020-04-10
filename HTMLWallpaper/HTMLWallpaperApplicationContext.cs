@@ -14,9 +14,6 @@ namespace HTMLWallpaper
 {
     class HTMLWallpaperApplicationContext : ApplicationContext
     {
-        private const string MutexName = "MUTEX_HTMLWallpaper_a2127684-b4f1-4a42-a248-53022ce2da03";
-        private Mutex _mutexApplication;
-
         private readonly ToolStripMenuItem _miExit;
         private readonly ToolStripMenuItem _miOptions;
         private readonly ToolStripMenuItem _miReload;
@@ -32,16 +29,6 @@ namespace HTMLWallpaper
 
         public HTMLWallpaperApplicationContext()
         {
-            // ensure one instance only
-            bool isFirstInstance = true;
-            if (_mutexApplication == null) _mutexApplication = new Mutex(true, MutexName, out isFirstInstance);
-            if (!isFirstInstance)
-            {
-                MessageBox.Show("An instance of HTMLWallpaper is already running. Only one instance is allowed at any given time.", "Multiple instances detected.");
-                if (_mutexApplication != null) _mutexApplication.Dispose();
-                Application.Exit();
-                return;
-            }
 
             // menu items
             _miExit = new ToolStripMenuItem("Exit");
@@ -155,8 +142,6 @@ namespace HTMLWallpaper
 
         private void Exit()
         {
-            if (_mutexApplication != null) _mutexApplication.Dispose();
-
             CloseWallpaper();
             CloseOptions();
 
