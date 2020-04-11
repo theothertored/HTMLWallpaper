@@ -140,7 +140,7 @@ namespace HTMLWallpaper
             _miReload.Enabled = _wall != null;
         }
 
-        private void Exit()
+        public void Exit()
         {
             CloseWallpaper();
             CloseOptions();
@@ -150,6 +150,7 @@ namespace HTMLWallpaper
 
             Application.Exit();
         }
+
 
         #region file system watcher
 
